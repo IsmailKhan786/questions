@@ -1,0 +1,33 @@
+.parent-container{
+    display:flex ; 
+    /* INITIALLY FLEX DIRECTION IS ROW FOR ALL CHILD */
+    justify-content:center;  
+    align-items:center;
+}
+.box {
+    height:200px; 
+    width:200px; 
+    margin-left:5px;
+    margin-bottom:5px;
+    flex-basis:20%;
+    /* EACH BOX WILL OCCUCPY 20% OF TOTAL WIDTH */
+}
+.green{
+    background-color: green;
+}
+.purple{
+    background-color: purple;
+}
+.blue{
+    background-color: blue;
+}
+@media only screen and (max-width: 500px) {
+    /* ALL ABOVE CSS WILL APPLY HERE WE CAN OVERID ANYTHING */
+    .parent-container{
+        flex-direction: column;
+    }
+  .box{
+    height:100px; 
+    width:100px
+  }
+  }
